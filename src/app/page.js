@@ -30,10 +30,10 @@ export default function page() {
     <>
       <Banner items={items} />
       <NewProducts />
+      <TopCategories />
       <TopBrands />
       <Product activepage="homepage" />
-      <Counter />
-      <TopCategories />
+      {/* <Counter /> */}
       <Whychoose />
       <Cta />
       <div className="py-6"></div>
