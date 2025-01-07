@@ -13,7 +13,7 @@ const categories = [
 
 export default function TopCategories() {
   return (
-    <section className="py-12 bg-gray-100">
+    <section className="py-12 bg-white">
       <div className="container px-4 max-w-7xl mx-auto">
         <span className="w-full pb-12 flex flex-col justify-center items-center">
           <h1 className="text-4xl md:text-5xl">Top Categories</h1>

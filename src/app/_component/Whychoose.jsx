@@ -36,7 +36,7 @@ export default function WhyChooseUs() {
   ];
 
   return (
-    <section className="bg-white py-16 md:py-24">
+    <section className="bg-gray-100 py-16 md:py-24">
       <Wrapper>
         <div className="text-center mb-16">
           <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-4">

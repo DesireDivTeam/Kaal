@@ -43,9 +43,9 @@ export default function Header() {
             <Image
               src="/logo.webp"
               alt="Logo"
-              width={240}
-              height={80}
-              className="w-auto h-16 md:h-20"
+              width={400}
+              height={100}
+              className="w-auto h-20 md:h-28"
               priority
             />
           </Link>
@@ -94,7 +94,7 @@ export default function Header() {
       </div>
 
       {/* Bottom Section - Navigation */}
-      <div className="border-t">
+      <div className="border-t bg-orange-500">
         <div className="container mx-auto px-4">
           {/* Desktop Navigation */}
           <nav className="hidden md:block">
@@ -102,7 +102,7 @@ export default function Header() {
               <li>
                 <Link
                   href="/"
-                  className="py-2 px-4 hover:text-orange-500 transition-colors"
+                  className="py-2 px-4 hover:text-gray-100 transition-colors text-white"
                 >
                   Home
                 </Link>
@@ -110,7 +110,7 @@ export default function Header() {
               <li>
                 <Link
                   href="/about"
-                  className="py-2 px-4 hover:text-orange-500 transition-colors"
+                  className="py-2 px-4 hover:text-gray-100 transition-colors text-white"
                 >
                   About
                 </Link>
@@ -121,7 +121,7 @@ export default function Header() {
               <li>
                 <Link
                   href="/contact"
-                  className="py-2 px-4 hover:text-orange-500 transition-colors"
+                  className="py-2 px-4 hover:text-gray-100 transition-colors text-white"
                 >
                   Contact
                 </Link>
