@@ -55,7 +55,7 @@ export default function Header() {
             />
           </Link>
 
-          <div className="hidden md:block flex-grow relative mx-auto">
+          <div className="hidden md:block flex-grow max-w-2xl mx-auto px-4">
             <SearchBar onSearch={handleSearch} />
             <SearchResults
               results={searchResults}
@@ -66,7 +66,7 @@ export default function Header() {
           <div className="hidden md:flex items-center gap-8">
             <a
               href="tel:+918800199820"
-              className="flex items-center gap-2 hover:text-orange-500 transition-colors"
+              className="flex items-center gap-2 hover:text-orange-500 transition-colors text-lg"
             >
               <Phone className="h-5 w-5" />
               <span>+91 8800199820</span>
@@ -98,11 +98,11 @@ export default function Header() {
       <div className="border-t bg-orange-500">
         <div className="container mx-auto px-4">
           <nav className="hidden md:block">
-            <ul className="flex items-center justify-center gap-8 py-2">
+            <ul className="flex items-center justify-center gap-6 py-2">
               <li>
                 <Link
                   href="/"
-                  className={`py-2 px-4 transition-colors ${
+                  className={`py-2 px-4 transition-colors font-bold text-xl ${
                     isActive("/")
                       ? "text-black font-bold"
                       : "text-white hover:text-gray-100"
@@ -114,7 +114,7 @@ export default function Header() {
               <li>
                 <Link
                   href="/about"
-                  className={`py-2 px-4 transition-colors ${
+                  className={`py-2 px-4 transition-colors font-bold text-xl ${
                     isActive("/about")
                       ? "text-black font-bold"
                       : "text-white hover:text-gray-100"
@@ -129,7 +129,7 @@ export default function Header() {
               <li>
                 <Link
                   href="/contact"
-                  className={`py-2 px-4 transition-colors ${
+                  className={`py-2 px-4 transition-colors font-bold text-xl ${
                     isActive("/contact")
                       ? "text-black font-bold"
                       : "text-white hover:text-gray-100"
@@ -159,7 +159,7 @@ export default function Header() {
                 <Link
                   href="/"
                   onClick={handleMobileClick}
-                  className={`block px-4 py-2 transition-colors ${
+                  className={`block px-4 py-2 transition-colors text-xl font-bold ${
                     isActive("/")
                       ? "text-black font-bold"
                       : "hover:text-orange-500"
@@ -172,7 +172,7 @@ export default function Header() {
                 <Link
                   href="/about"
                   onClick={handleMobileClick}
-                  className={`block px-4 py-2 transition-colors ${
+                  className={`block px-4 py-2 transition-colors text-xl font-bold ${
                     isActive("/about")
                       ? "text-black font-bold"
                       : "hover:text-orange-500"
@@ -188,7 +188,7 @@ export default function Header() {
                 <Link
                   href="/contact"
                   onClick={handleMobileClick}
-                  className={`block px-4 py-2 transition-colors ${
+                  className={`block px-4 py-2 transition-colors text-xl font-bold ${
                     isActive("/contact")
                       ? "text-black font-bold"
                       : "hover:text-orange-500"
