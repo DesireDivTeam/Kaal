@@ -55,7 +55,7 @@ export default function Header() {
             />
           </Link>
 
-          <div className="hidden md:block flex-grow max-w-xl relative">
+          <div className="hidden md:block flex-grow relative mx-auto">
             <SearchBar onSearch={handleSearch} />
             <SearchResults
               results={searchResults}
@@ -145,7 +145,7 @@ export default function Header() {
 
       <div className={`md:hidden ${isMobileMenuOpen ? "block" : "hidden"}`}>
         <div className="border-t">
-          <div className="p-4 border-b relative">
+          <div className="p-4 border-b relative mx-auto max-w-xl">
             <SearchBar onSearch={handleSearch} />
             <SearchResults
               results={searchResults}
