@@ -51,7 +51,7 @@ export default function MegaMenu({ isMobile }) {
       >
         <button
           onClick={() => setIsOpen(!isOpen)}
-          className="flex items-center gap-1 py-2 px-4 text-white hover:text-gray-100 transition-colors"
+          className="flex items-center gap-1 py-2 px-4 text-xl font-bold text-white hover:text-gray-100 transition-colors"
         >
           Products
           <ChevronDown
@@ -79,7 +79,7 @@ export default function MegaMenu({ isMobile }) {
                     <li key={item}>
                       <a
                         href={`/product`}
-                        className="text-gray-600 hover:text-orange-700 transition-colors"
+                        className="text-gray-700 hover:text-orange-700 transition-colors text-lg"
                       >
                         {item}
                       </a>
@@ -98,7 +98,7 @@ export default function MegaMenu({ isMobile }) {
     <div className="w-full">
       <button
         onClick={() => setIsOpen(!isOpen)}
-        className="flex items-center justify-between w-full py-2 px-4"
+        className="flex items-center justify-between w-full py-2 px-4 text-xl font-bold"
       >
         Products
         <ChevronDown
@@ -115,7 +115,7 @@ export default function MegaMenu({ isMobile }) {
       >
         {Object.entries(productCategories).map(([category, items]) => (
           <div key={category} className="py-2 px-4">
-            <h3 className="font-semibold text-primary">{category}</h3>
+            <h3 className="font-semibold text-primary text-xl">{category}</h3>
             <ul className="mt-1 ml-4">
               {items.map((item) => (
                 <li key={item}>
@@ -123,7 +123,7 @@ export default function MegaMenu({ isMobile }) {
                     href={`/products/${item
                       .toLowerCase()
                       .replace(/\s+/g, "-")}`}
-                    className="block py-1 text-gray-600 hover:text-primary transition-colors"
+                    className="block py-1 text-gray-600 hover:text-primary transition-colors text-lg"
                   >
                     {item}
                   </a>
