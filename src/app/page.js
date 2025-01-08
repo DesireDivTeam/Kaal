@@ -24,6 +24,20 @@ const items = [
   //     "Discover durable, high-performance tools designed for every project. Built to last, made to deliver.",
   // },
 ];
+const items2 = [
+  {
+    image: "/ks2.webp",
+    heading: "Power Up Your Projects with Tools You Can Count On.",
+    shortdesc:
+      "Discover durable, high-performance tools designed for every project. Built to last, made to deliver.",
+  },
+  {
+    image: "/ks1.webp",
+    heading: "Power Up Your Projects with Tools You Can Count On.",
+    shortdesc:
+      "Discover durable, high-performance tools designed for every project. Built to last, made to deliver.",
+  },
+];
 
 export default function page() {
   return (
@@ -31,7 +45,8 @@ export default function page() {
       <Banner items={items} />
       <NewProducts />
       <TopCategories />
-      <TopBrands />
+      <Banner items={items2} />
+      {/* <TopBrands /> */}
       <Product activepage="homepage" />
       {/* <Counter /> */}
       <Whychoose />
