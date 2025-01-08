@@ -37,7 +37,7 @@ export default function Header() {
     <header className="w-full bg-white shadow-md sticky top-0 z-50">
       {/* Top Section */}
       <div className="container mx-auto px-4">
-        <div className="flex items-center justify-between py-4 gap-4">
+        <div className="flex items-center justify-between gap-4">
           {/* Logo */}
           <Link href="/" className="flex-shrink-0">
             <Image
@@ -60,7 +60,7 @@ export default function Header() {
           </div>
 
           {/* Contact Buttons */}
-          <div className="hidden md:flex items-center gap-4">
+          <div className="hidden md:flex items-center gap-8">
             <a
               href="tel:+918800199820"
               className="flex items-center gap-2 hover:text-orange-500 transition-colors"
