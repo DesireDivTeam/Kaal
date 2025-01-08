@@ -17,12 +17,12 @@ const items = [
     shortdesc:
       "Discover durable, high-performance tools designed for every project. Built to last, made to deliver.",
   },
-  {
-    image: "/ks2.webp",
-    heading: "Power Up Your Projects with Tools You Can Count On.",
-    shortdesc:
-      "Discover durable, high-performance tools designed for every project. Built to last, made to deliver.",
-  },
+  // {
+  //   image: "/ks2.webp",
+  //   heading: "Power Up Your Projects with Tools You Can Count On.",
+  //   shortdesc:
+  //     "Discover durable, high-performance tools designed for every project. Built to last, made to deliver.",
+  // },
 ];
 
 export default function page() {
@@ -35,7 +35,7 @@ export default function page() {
       <Product activepage="homepage" />
       {/* <Counter /> */}
       <Whychoose />
-      <Cta />
+      {/* <Cta /> */}
       <div className="py-6"></div>
       <Testimonials />
       <div className="py-6"></div>

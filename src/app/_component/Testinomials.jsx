@@ -77,7 +77,6 @@ const TestimonialCard = ({ testimonial }) => (
 
 const Testimonial = () => {
   const [currentIndex, setCurrentIndex] = useState(0);
-  const [isLargeScreen, setIsLargeScreen] = useState(false);
 
   const nextSlide = useCallback(() => {
     setCurrentIndex((prevIndex) => (prevIndex + 1) % testimonials.length);
@@ -94,19 +93,8 @@ const Testimonial = () => {
     return () => clearInterval(interval);
   }, [nextSlide]);
 
-  useEffect(() => {
-    const handleResize = () => {
-      setIsLargeScreen(window.innerWidth >= 1024);
-    };
-
-    handleResize();
-    window.addEventListener("resize", handleResize);
-
-    return () => window.removeEventListener("resize", handleResize);
-  }, []);
-
   return (
-    <section className="bg-gradient-to-b from-gray-50 to-white py-16 md:py-24">
+    <section className="bg-gradient-to-b from-gray-50 to-white py-16">
       <div className="container mx-auto px-4 max-w-6xl">
         <div className="text-center mb-16">
           <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-4">
@@ -116,17 +104,8 @@ const Testimonial = () => {
         </div>
 
         <div className="relative">
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-6">
+          <div className="grid grid-cols-1 gap-6">
             <TestimonialCard testimonial={testimonials[currentIndex]} />
-            {isLargeScreen && (
-              <div className="hidden lg:block">
-                <TestimonialCard
-                  testimonial={
-                    testimonials[(currentIndex + 1) % testimonials.length]
-                  }
-                />
-              </div>
-            )}
           </div>
 
           <button
@@ -151,11 +130,7 @@ const Testimonial = () => {
               key={index}
               onClick={() => setCurrentIndex(index)}
               className={`h-3 w-3 mx-1 rounded-full transition-colors duration-300 ${
-                currentIndex === index ||
-                (index === (currentIndex + 1) % testimonials.length &&
-                  isLargeScreen)
-                  ? "bg-[var(--maincolor)]"
-                  : "bg-gray-300"
+                currentIndex === index ? "bg-[var(--maincolor)]" : "bg-gray-300"
               }`}
               aria-label={`Go to testimonial ${index + 1}`}
             />

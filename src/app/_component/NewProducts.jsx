@@ -10,7 +10,7 @@ import Wrapper from "./Wrapper";
 export default function NewProducts() {
   const [data, setData] = useState([]);
   const [loading, setLoading] = useState(true);
-  const featuredProducts = data.slice(0, 4);
+  const featuredProducts = data.slice(0, 5);
 
   useEffect(() => {
     const fetchProductData = async () => {
@@ -39,7 +39,7 @@ export default function NewProducts() {
             </span>
           </div>
         ) : (
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-8">
             {featuredProducts.map((item, index) => (
               <Link
                 href={`/product/${item.title}`}

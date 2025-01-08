@@ -16,8 +16,10 @@ export default function TopCategories() {
     <section className="py-12 bg-white">
       <div className="container px-4 max-w-7xl mx-auto">
         <span className="w-full pb-12 flex flex-col justify-center items-center">
-          <h1 className="text-4xl md:text-5xl">Top Categories</h1>
-          <div className="bg-[var(--maincolor)] w-32 h-1 rounded-full mt-2"></div>
+          <h1 className="text-4xl md:text-5xl font-bold text-black">
+            Product Categories
+          </h1>
+          <div className="bg-[var(--maincolor)] w-44 h-1 rounded-full mt-2"></div>
         </span>
         <div className="flex flex-col lg:flex-row gap-8">
           {/* Banner Image */}
