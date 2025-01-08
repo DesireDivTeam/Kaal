@@ -94,7 +94,7 @@ const Testimonial = () => {
   }, [nextSlide]);
 
   return (
-    <section className="bg-gradient-to-b from-gray-50 to-white py-16 md:py-24">
+    <section className="bg-gradient-to-b from-gray-50 to-white py-16">
       <div className="container mx-auto px-4 max-w-6xl">
         <div className="text-center mb-16">
           <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-4">
