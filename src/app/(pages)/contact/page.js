@@ -109,37 +109,38 @@ function ContactForm() {
 export default function Component() {
   return (
     <Wrapper className="mb-6">
-      <span className="w-full text-center "><h1 className="mb-12 text-4xl md:text-5xl ">Get in Touch</h1></span>
+      <span className="w-full text-center ">
+        <h1 className="mb-12  md:text-5xl ">Get in Touch</h1>
+      </span>
       <div className="grid lg:grid-cols-2 grid-cols-1 gap-8 ">
         <section className="flex-col  md:flex space-y-10">
-        { contactMethods.map((items,index)=> (
-         <div key={index} className="flex gap-4">
-         <span className="p-4 rounded-full bg-[var(--lightcolor)]">
-           <items.icon color="var(--maincolor)" size={30} />
-         </span>
-         <span className="flex flex-col">
-           <h1 className="text-xl">{items.title}</h1>
-           <p>{items.info}</p>
-         </span>
-         </div>
-       
-       ))}
+          {contactMethods.map((items, index) => (
+            <div key={index} className="flex gap-4">
+              <span className="p-4 rounded-full bg-[var(--lightcolor)]">
+                <items.icon color="var(--maincolor)" size={30} />
+              </span>
+              <span className="flex flex-col">
+                <h1 className="text-xl">{items.title}</h1>
+                <p>{items.info}</p>
+              </span>
+            </div>
+          ))}
+          <section>
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3507.288074788611!2d76.96075877528283!3d28.470869875753362!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390d17957da3b1e7%3A0xe31b6d39c72cc555!2sDesire%20Div%20-%20Website%20Designing%20Company%20in%20Gurgaon!5e0!3m2!1sen!2sin!4v1731919600012!5m2!1sen!2sin"
+              width="100%"
+              height="310"
+              allowFullScreen=""
+              loading="lazy"
+              referrerPolicy="no-referrer-when-downgrade"
+            ></iframe>
+          </section>
+        </section>
         <section>
-          <iframe
-            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3507.288074788611!2d76.96075877528283!3d28.470869875753362!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390d17957da3b1e7%3A0xe31b6d39c72cc555!2sDesire%20Div%20-%20Website%20Designing%20Company%20in%20Gurgaon!5e0!3m2!1sen!2sin!4v1731919600012!5m2!1sen!2sin"
-            width="100%"
-            height="310"
-            allowFullScreen=""
-            loading="lazy"
-            referrerPolicy="no-referrer-when-downgrade"
-          ></iframe>
-        </section>
-        </section>
-       <section>
-      <Suspense fallback={<div>Loading...</div>}>
+          <Suspense fallback={<div>Loading...</div>}>
             <ContactForm />
           </Suspense>
-      </section>
+        </section>
       </div>
     </Wrapper>
   );

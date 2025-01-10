@@ -39,7 +39,7 @@ export default function WhyChooseUs() {
     <section className="bg-gray-100 py-10">
       <Wrapper>
         <div className="text-center mb-16">
-          <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-4">
+          <h2 className=" md:text-5xl font-bold text-gray-900 mb-4">
             Why Choose Us
           </h2>
           <div className="bg-orange-500 w-24 h-1 mx-auto rounded-full"></div>

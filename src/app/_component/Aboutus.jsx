@@ -11,7 +11,7 @@ export default function AboutUs({ activePage = "about" }) {
       <Wrapper>
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
           <div>
-            <h1 className="text-4xl md:text-5xl font-bold text-gray-900 mb-6">
+            <h1 className=" md:text-5xl font-bold text-gray-900 mb-6">
               About Us
             </h1>
             <div className="w-24 h-1 bg-orange-500 mb-8"></div>
@@ -75,7 +75,7 @@ export default function AboutUs({ activePage = "about" }) {
                             }
                             left-4 bottom-4 md:left-[-30px] md:bottom-[-30px] lg:left-[-60px] lg:bottom-[-30px]`}
             >
-              <span className="text-4xl font-bold">15+</span>
+              <span className=" font-bold">15+</span>
               <span>Years of Excellence</span>
             </div>
           </div>
