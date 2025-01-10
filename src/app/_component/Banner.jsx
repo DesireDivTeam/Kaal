@@ -30,7 +30,7 @@ export function Banner({ items }) {
         <CarouselContent>
           {items.map((item, index) => (
             <CarouselItem key={index}>
-              <div className="relative w-full md:aspect-[21/8] aspect-square h-[40vh]">
+              <div className="relative w-full md:aspect-[21/8] aspect-square h-[55vh]">
                 <Image
                   src={item.image}
                   alt={`Banner image ${index + 1}`}
