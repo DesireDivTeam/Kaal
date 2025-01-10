@@ -5,11 +5,12 @@ import Link from "next/link";
 import { fetchProducts } from "@/Api";
 import { Loader2Icon } from "lucide-react";
 import Wrapper from "./Wrapper";
+import ProductCard from "./product-card";
 
 export default function Product({ activepage = "product" }) {
   const [Data, setData] = useState([]);
   const [Loading, setLoading] = useState(true);
-  const FeaturedProduct = activepage == "homepage" ? Data.slice(0, 8) : Data;
+  const FeaturedProduct = activepage == "homepage" ? Data.slice(0, 5) : Data;
   useEffect(() => {
     const Products = async () => {
       const data = await fetchProducts();
@@ -23,11 +24,11 @@ export default function Product({ activepage = "product" }) {
     <>
       <Wrapper>
         <span className="w-full pb-12 flex flex-col justify-center items-center ">
-          <h1 className="text-4xl md:text-5xl font-bold text-black">
-            {activepage === "homepage" ? "Hot Selling Products" : ""}{" "}
+          <h1 className=" text-4xl font-bold text-black">
+            {activepage === "homepage" ? "Hot Sellers" : ""}{" "}
           </h1>
           {activepage === "homepage" && (
-            <div className="bg-[var(--maincolor)] w-56 h-1 rounded-full mt-2 "></div>
+            <div className="bg-[var(--maincolor)] w-44 h-1 rounded-full mt-2 "></div>
           )}
         </span>
         {Loading && (
@@ -36,27 +37,16 @@ export default function Product({ activepage = "product" }) {
             <span className="ml-2 text-lg font-medium">Loading...</span>
           </div>
         )}
-        <div className="grid relative grid-cols-1 sm:grid-cols-2 md:px-4 lg:grid-cols-4 gap-8">
+        <div className="grid relative grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-8">
           {FeaturedProduct.map((items, index) => (
-            <Link
-              className="border rounded-lg p-2  hover:shadow-lg transition-shadow"
+            <ProductCard
               key={index}
+              price={items.price}
               href={`/product/${items.title}`}
-            >
-              <div className="flex flex-col pb-3 ">
-                <div className="relative border-b">
-                  <Image
-                    className="w-full h-full  object-cover"
-                    alt={items.title}
-                    width={600}
-                    height={500}
-                    src={items.image}
-                  />
-                </div>
-                <h2 className="pt-5 px-4">{items.title}</h2>
-                <h2 className="pt-2 px-4">₹{items.price}</h2>
-              </div>
-            </Link>
+              image={items.image}
+              title={items.title}
+              tag={"HOT"}
+            />
           ))}
         </div>
         {activepage === "homepage" && (

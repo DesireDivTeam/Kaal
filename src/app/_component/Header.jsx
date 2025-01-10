@@ -102,7 +102,7 @@ export default function Header() {
               <li>
                 <Link
                   href="/"
-                  className={`py-2 px-4 transition-colors font-bold text-xl ${
+                  className={`py-2 px-4 transition-colors font-bold text-lg ${
                     isActive("/")
                       ? "text-black font-bold"
                       : "text-white hover:text-gray-100"
@@ -114,7 +114,7 @@ export default function Header() {
               <li>
                 <Link
                   href="/about"
-                  className={`py-2 px-4 transition-colors font-bold text-xl ${
+                  className={`py-2 px-4 transition-colors font-bold text-lg ${
                     isActive("/about")
                       ? "text-black font-bold"
                       : "text-white hover:text-gray-100"
@@ -129,7 +129,7 @@ export default function Header() {
               <li>
                 <Link
                   href="/contact"
-                  className={`py-2 px-4 transition-colors font-bold text-xl ${
+                  className={`py-2 px-4 transition-colors font-bold text-lg ${
                     isActive("/contact")
                       ? "text-black font-bold"
                       : "text-white hover:text-gray-100"
@@ -159,7 +159,7 @@ export default function Header() {
                 <Link
                   href="/"
                   onClick={handleMobileClick}
-                  className={`block px-4 py-2 transition-colors text-xl font-bold ${
+                  className={`block px-4 py-2 transition-colors text-lg font-bold ${
                     isActive("/")
                       ? "text-black font-bold"
                       : "hover:text-orange-500"
@@ -172,7 +172,7 @@ export default function Header() {
                 <Link
                   href="/about"
                   onClick={handleMobileClick}
-                  className={`block px-4 py-2 transition-colors text-xl font-bold ${
+                  className={`block px-4 py-2 transition-colors text-lg font-bold ${
                     isActive("/about")
                       ? "text-black font-bold"
                       : "hover:text-orange-500"
@@ -188,7 +188,7 @@ export default function Header() {
                 <Link
                   href="/contact"
                   onClick={handleMobileClick}
-                  className={`block px-4 py-2 transition-colors text-xl font-bold ${
+                  className={`block px-4 py-2 transition-colors text-lg font-bold ${
                     isActive("/contact")
                       ? "text-black font-bold"
                       : "hover:text-orange-500"

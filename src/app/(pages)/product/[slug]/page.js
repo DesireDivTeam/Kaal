@@ -32,8 +32,8 @@ export default function ProductPage() {
     loadProducts();
   }, [result]);
 
-  const allImages = product ? 
-    [product.image, ...(product.additionalimage || [])].filter(Boolean) 
+  const allImages = product
+    ? [product.image, ...(product.additionalimage || [])].filter(Boolean)
     : [];
 
   const scrollTo = useCallback(
@@ -95,7 +95,7 @@ export default function ProductPage() {
           )}
         </div>
         <div className="space-y-3">
-          <h1 className="text-3xl md:text-4xl font-bold text-gray-900">
+          <h1 className="text-3xl md: font-bold text-gray-900">
             {product?.title}
           </h1>
           <div className="flex items-baseline space-x-2">
