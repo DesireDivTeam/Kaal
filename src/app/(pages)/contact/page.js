@@ -110,7 +110,7 @@ export default function Component() {
   return (
     <Wrapper className="mb-6">
       <span className="w-full text-center ">
-        <h1 className="mb-12  md:text-5xl ">Get in Touch</h1>
+        <h1 className="mb-12  text-4xl ">Get in Touch</h1>
       </span>
       <div className="grid lg:grid-cols-2 grid-cols-1 gap-8 ">
         <section className="flex-col  md:flex space-y-10">

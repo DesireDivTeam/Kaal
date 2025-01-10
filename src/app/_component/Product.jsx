@@ -24,7 +24,7 @@ export default function Product({ activepage = "product" }) {
     <>
       <Wrapper>
         <span className="w-full pb-12 flex flex-col justify-center items-center ">
-          <h1 className=" md:text-5xl font-bold text-black">
+          <h1 className=" text-4xl font-bold text-black">
             {activepage === "homepage" ? "Hot Sellers" : ""}{" "}
           </h1>
           {activepage === "homepage" && (

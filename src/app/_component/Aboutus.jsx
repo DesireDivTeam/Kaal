@@ -11,9 +11,7 @@ export default function AboutUs({ activePage = "about" }) {
       <Wrapper>
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
           <div>
-            <h1 className=" md:text-5xl font-bold text-gray-900 mb-6">
-              About Us
-            </h1>
+            <h1 className=" text-4xl font-bold text-gray-900 mb-6">About Us</h1>
             <div className="w-24 h-1 bg-orange-500 mb-8"></div>
             <p className="text-gray-700 mb-6 leading-relaxed">
               Aimed with an invaluable legacy, contemporary approach and

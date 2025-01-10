@@ -39,7 +39,7 @@ const TopBrands = () => {
     <section className="py-16 bg-[var(--maincolor)]">
       <div className="max-w-screen-xl mx-auto px-4">
         <div className="text-center mb-12">
-          <h2 className=" md:text-5xl  mb-4 text-white">Top Brands</h2>
+          <h2 className=" text-4xl  mb-4 text-white">Top Brands</h2>
         </div>
 
         <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-8 items-center justify-items-center">
