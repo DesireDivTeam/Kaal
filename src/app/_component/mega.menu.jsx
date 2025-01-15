@@ -51,7 +51,7 @@ export default function MegaMenu({ isMobile }) {
       >
         <button
           onClick={() => setIsOpen(!isOpen)}
-          className="flex items-center gap-1 py-2 px-4 text-lg font-bold text-white hover:text-gray-100 transition-colors"
+          className="flex items-center gap-1 py-2 px-4 text-base font-bold text-white hover:text-gray-100 transition-colors"
         >
           Products
           <ChevronDown
