@@ -102,7 +102,7 @@ export default function Header() {
               <li>
                 <Link
                   href="/"
-                  className={`py-2 px-4 transition-colors font-bold text-base ${
+                  className={`py-1 px-4 transition-colors font-bold text-base ${
                     isActive("/")
                       ? "text-black font-bold"
                       : "text-white hover:text-gray-100"
@@ -114,7 +114,7 @@ export default function Header() {
               <li>
                 <Link
                   href="/about"
-                  className={`py-2 px-4 transition-colors font-bold text-base ${
+                  className={`py-1 px-4 transition-colors font-bold text-base ${
                     isActive("/about")
                       ? "text-black font-bold"
                       : "text-white hover:text-gray-100"
@@ -129,7 +129,7 @@ export default function Header() {
               <li>
                 <Link
                   href="/contact"
-                  className={`py-2 px-4 transition-colors font-bold text-base ${
+                  className={`py-1 px-4 transition-colors font-bold text-base ${
                     isActive("/contact")
                       ? "text-black font-bold"
                       : "text-white hover:text-gray-100"
