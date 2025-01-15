@@ -98,7 +98,7 @@ export default function Header() {
       <div className="border-t bg-orange-500">
         <div className="container mx-auto px-4">
           <nav className="hidden md:block">
-            <ul className="flex items-center justify-center gap-6 py-2">
+            <ul className="flex items-center justify-center gap-6">
               <li>
                 <Link
                   href="/"
