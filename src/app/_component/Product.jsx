@@ -1,6 +1,5 @@
 "use client";
 import React, { useEffect, useState } from "react";
-import Image from "next/image";
 import Link from "next/link";
 import { fetchProducts } from "@/Api";
 import { Loader2Icon } from "lucide-react";
@@ -24,7 +23,7 @@ export default function Product({ activepage = "product" }) {
     <>
       <Wrapper>
         <span className="w-full pb-12 flex flex-col justify-center items-center ">
-          <h1 className=" text-4xl font-bold text-black">
+          <h1 className=" text-4xl font-bold text-black uppercase">
             {activepage === "homepage" ? "Hot Sellers" : ""}{" "}
           </h1>
           {activepage === "homepage" && (
@@ -37,7 +36,7 @@ export default function Product({ activepage = "product" }) {
             <span className="ml-2 text-lg font-medium">Loading...</span>
           </div>
         )}
-        <div className="grid relative grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-8">
+        <div className="grid relative grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-8 p-2">
           {FeaturedProduct.map((items, index) => (
             <ProductCard
               key={index}

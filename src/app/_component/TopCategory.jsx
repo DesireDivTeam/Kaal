@@ -17,7 +17,7 @@ export default function TopCategories() {
     <section className="py-12 bg-white">
       <div className="container px-4 max-w-7xl mx-auto">
         <span className="w-full pb-12 flex flex-col justify-center items-center">
-          <h1 className="text-4xl font-bold text-black">Product Categories</h1>
+          <h1 className="text-4xl font-bold text-black uppercase">Product Categories</h1>
           <div className="bg-[var(--maincolor)] w-44 h-1 rounded-full mt-2"></div>
         </span>
         <div className="flex flex-col gap-8">

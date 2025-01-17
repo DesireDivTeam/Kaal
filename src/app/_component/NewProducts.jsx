@@ -24,7 +24,7 @@ export default function NewProducts() {
     <section className="w-full bg-gray-100 py-12">
       <Wrapper>
         <div className="w-full pb-12 flex flex-col justify-center items-center">
-          <h1 className="text-4xl font-bold text-black">New Arrivals</h1>
+          <h1 className="text-4xl font-bold text-black uppercase">New Arrivals</h1>
           <span className="bg-orange-500 w-44 h-1 rounded-full mt-4"></span>
         </div>
 
@@ -36,7 +36,7 @@ export default function NewProducts() {
             </span>
           </div>
         ) : (
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-5">
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-5 p-3">
             {featuredProducts.map((item, index) => (
               <ProductCard
                 key={index}
